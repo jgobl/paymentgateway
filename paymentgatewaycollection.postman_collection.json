@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "d473242c-5777-41d4-95dc-e231ae2f5263",
+		"name": "paymentgatewaycollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/api/payments/22",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CardNumber\": \"111111111111118\",\r\n    \"Cvv\": \"123\",\r\n    \"ExpiryMonth\": \"01\",\r\n    \"ExpiryYear\": \"55\",\r\n    \"MerchantId\": 10,\r\n    \"CurrencyCode\": \"GBP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/payments/22",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"payments",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/payments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CardNumber\": \"111111111111111\",\r\n    \"Cvv\": \"123\",\r\n    \"ExpiryMonth\": \"01\",\r\n    \"ExpiryYear\": \"55\",\r\n    \"MerchantId\": 10,\r\n    \"CurrencyCode\": \"GBP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/payments",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
